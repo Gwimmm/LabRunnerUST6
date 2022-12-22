@@ -4,10 +4,13 @@ public class BabyParrot
     private int age;
     private String name;
 
-    public BabyParrot(String species, int age)
+    private double weight;
+
+    public BabyParrot(String species, int age, double weight)
     {
         this.species = species;
         this.age = age;
+        this.weight = weight;
         this.name = ""; // use a default value of the 'empty string'
     }
 
@@ -21,7 +24,8 @@ public class BabyParrot
     {
         String str = "Species: " + species + "\n";
         str += "Name: " + name + "\n";
-        str += "Age: " + age;
+        str += "Age: " + age + "\n";
+        str += "Weight: " + weight;
         return str;
     }
 }
